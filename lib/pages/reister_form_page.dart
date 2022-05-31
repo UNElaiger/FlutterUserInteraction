@@ -19,7 +19,7 @@ class _RegisterFormPage extends State<RegisterFormPage> {
   final TextEditingController _passController = TextEditingController();
   final TextEditingController _confirmPassController = TextEditingController();
 
-  List<String> _countries = ['Russian', 'China', 'USA', 'Korea'];
+  List<String> _countries = ['Russian', 'China', 'USA', 'Korea','Japan', 'Germany'];
   String _selectedCountry = 'Russian';
 
   @override
@@ -186,7 +186,8 @@ class _RegisterFormPage extends State<RegisterFormPage> {
       print('form is valide');
     print('Name: ${_nameController.text}');
     print('Phone: ${_phoneController.text}');
-    print('Email: ${_emailController.text}');
+    print('Phone: ${_phoneController.text}');
+    print('Email: ${_selectedCountry}');
     print('Story: ${_storyController.text}');
     }else {
       print('Form is not valid! please review and correct');
