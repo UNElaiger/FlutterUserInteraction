@@ -25,6 +25,8 @@ class _RegisterFormPage extends State<RegisterFormPage> {
 
   List<String> _countries = ['Russian', 'China', 'USA', 'Korea','Japan', 'Germany'];
   String _selectedCountry = 'USA';
+  String country = 'USA';
+ 
 
   final _nameFocus = FocusNode();
   final _phoneFocus = FocusNode();
@@ -239,8 +241,8 @@ class _RegisterFormPage extends State<RegisterFormPage> {
       print('form is valide');
     print('Name: ${_nameController.text}');
     print('Phone: ${_phoneController.text}');
-    print('Phone: ${_phoneController.text}');
-    print('Email: ${_selectedCountry}');
+    print('Email: ${_emailController.text}');
+    print('Country: ${_selectedCountry}');
     print('Story: ${_storyController.text}');
     
     }else {
